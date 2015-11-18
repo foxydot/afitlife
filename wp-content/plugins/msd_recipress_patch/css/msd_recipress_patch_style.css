@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+#menu-posts-msd_recipe .wp-menu-image img { display:none; }
+#menu-posts-msd_recipe .wp-menu-image a {
+	background:url(../img/icon.png) no-repeat 0 -48px;
+}
+#menu-posts-msd_recipe:hover .wp-menu-image a,
+#menu-posts-msd_recipe.wp-has-current-submenu .wp-menu-image a {
+	background-position:0 -88px;
+}

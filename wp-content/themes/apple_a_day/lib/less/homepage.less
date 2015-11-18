@@ -1,0 +1,83 @@
+@import 'reset';
+@import 'elements';
+@import 'mixins';
+
+#content {
+	float: none;
+	padding: 0;
+	.home-left{
+		.futuraish(16px);
+		float: left;
+		width: 260px;
+		padding: 10px;
+		height: 250px;
+		text-align: center;
+		color: #0D72C7;
+		font-weight: bold;
+		.readmore {
+			background-color: @orange;
+			span {
+			background-image: url(../../images/arrow-wht.png);
+			background-repeat: no-repeat;
+			background-position: center right;
+			padding: 4px 24px 4px 4px;
+			}
+			padding: 4px;
+			margin:6px;
+			color: #fff;
+			}
+		}
+	.home-right{
+		float: right;
+		width: 680px;
+		height: 250px;
+		}
+	.home-footer{
+		float: none;
+		clear: both;
+		.widget {
+			height: 250px;
+			float: left;
+			margin-right:1%;
+			background:#f5f5f5;
+			text-align: center;
+			.futuraish;
+			h4.widgettitle{
+				background: #accbdc;
+				color: #fff;
+				font-size: 24px;
+				margin-bottom: 12px;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+		.widget.odd {
+			background:#f5f9fb;
+		}
+		.widget.last-child {
+			margin-right: 0;
+		}
+	}
+	.home-footer.cols-2{
+		.widget{width: 49.5%}
+	}
+	.home-footer.cols-3{
+		.widget{width: 32.5%}
+	}
+	.home-footer.cols-4{
+		.widget{width: 24.25%}
+	}
+}
+
+.site-corp {
+	#content {
+	float: none;
+	padding: 0;
+	.home-left{
+		.futuraish(14px);
+		text-align: left;
+		font-weight: bold;
+		}
+	}
+}
